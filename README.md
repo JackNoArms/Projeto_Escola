@@ -1,5 +1,5 @@
 # Projeto Escola
-## Acesse https://apex.oracle.com/pls/apex/r/apex_workplace/sistema-escola193381/home?
+## Acesse https://apex.oracle.com/pls/apex/r/apex_workplace/sistema-escola193381/home
  
  Um aplicativo empresarial voltado para gerenciamento de uma escola, tem como principal objetivo garantir agilidade e confiabilidade nas operações diárias da organização.
  
