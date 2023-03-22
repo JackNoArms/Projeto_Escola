@@ -1,0 +1,41 @@
+[
+  {
+    "id":"65404741392065815466"
+   ,"Identification":{
+      "Name":"Comentado"
+    }
+   ,"Status":{
+      "Status":"Exclude"
+     ,"Default on Export":"Same as Current Status"
+     ,"On Upgrade Keep Status":false
+    }
+  }
+ ,{
+    "id":"65405544772446815566"
+   ,"Identification":{
+      "Name":"Recurso: Relat\u00F3rio de Atividades"
+    }
+   ,"Status":{
+      "Status":"Include"
+     ,"Default on Export":"Same as Current Status"
+     ,"On Upgrade Keep Status":false
+    }
+   ,"Comments":{
+      "Comments":"Inclua diversos relat\u00F3rios e gr\u00E1ficos sobre a atividade do usu\u00E1rio final."
+    }
+  }
+ ,{
+    "id":"65405545458545815566"
+   ,"Identification":{
+      "Name":"Recurso: Sele\u00E7\u00E3o de Estilo do Tema"
+    }
+   ,"Status":{
+      "Status":"Include"
+     ,"Default on Export":"Same as Current Status"
+     ,"On Upgrade Keep Status":false
+    }
+   ,"Comments":{
+      "Comments":"Permitir que os administradores selecionem um esquema de cores padr\u00E3o (estilo de tema) para o aplicativo. Os administradores tamb\u00E9m podem permitir que os usu\u00E1rios finais escolham seu pr\u00F3prio estilo de tema. "
+    }
+  }
+]

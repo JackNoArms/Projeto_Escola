@@ -1,0 +1,62 @@
+[
+  {
+    "id":"65404742776129815468"
+   ,"Identification":{
+      "Name":"Drawer"
+    }
+  }
+ ,{
+    "id":"65404745680082815469"
+   ,"Identification":{
+      "Name":"Left Side Column"
+    }
+  }
+ ,{
+    "id":"65404749335837815471"
+   ,"Identification":{
+      "Name":"Left and Right Side Columns"
+    }
+  }
+ ,{
+    "id":"65404753366375815474"
+   ,"Identification":{
+      "Name":"Login"
+    }
+  }
+ ,{
+    "id":"65404755901077815475"
+   ,"Identification":{
+      "Name":"Marquee"
+    }
+  }
+ ,{
+    "id":"65404759910707815477"
+   ,"Identification":{
+      "Name":"Minimal (No Navigation)"
+    }
+  }
+ ,{
+    "id":"65404763304812815479"
+   ,"Identification":{
+      "Name":"Modal Dialog"
+    }
+  }
+ ,{
+    "id":"65404764867058815479"
+   ,"Identification":{
+      "Name":"Right Side Column"
+    }
+  }
+ ,{
+    "id":"65404768538180815481"
+   ,"Identification":{
+      "Name":"Standard"
+    }
+  }
+ ,{
+    "id":"65404771964642815483"
+   ,"Identification":{
+      "Name":"Wizard Modal Dialog"
+    }
+  }
+]

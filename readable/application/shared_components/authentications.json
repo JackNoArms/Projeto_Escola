@@ -1,0 +1,18 @@
+[
+  {
+    "id":"65404741633516815467"
+   ,"Identification":{
+      "Name":"Contas do Oracle APEX"
+    }
+   ,"Settings":{
+      "Type":"Sem Autentica\u00E7\u00E3o"
+     ,"Nome do Usu\u00E1rio":"nobody"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+]

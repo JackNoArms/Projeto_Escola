@@ -1,0 +1,74 @@
+[
+  {
+    "id":"65405464310458815523"
+   ,"Identification":{
+      "Name":"Alerts"
+    }
+  }
+ ,{
+    "id":"65405464542776815523"
+   ,"Identification":{
+      "Name":"Badge List"
+    }
+  }
+ ,{
+    "id":"65405468584772815525"
+   ,"Identification":{
+      "Name":"Cards"
+    }
+  }
+ ,{
+    "id":"65405473906512815527"
+   ,"Identification":{
+      "Name":"Comments"
+    }
+  }
+ ,{
+    "id":"65405475163126815528"
+   ,"Identification":{
+      "Name":"Content Row"
+    }
+  }
+ ,{
+    "id":"65405478323716815529"
+   ,"Identification":{
+      "Name":"Contextual Info"
+    }
+  }
+ ,{
+    "id":"65405479379600815530"
+   ,"Identification":{
+      "Name":"Media List"
+    }
+  }
+ ,{
+    "id":"65405482333822815531"
+   ,"Identification":{
+      "Name":"Search Results"
+    }
+  }
+ ,{
+    "id":"65405482507464815531"
+   ,"Identification":{
+      "Name":"Standard"
+    }
+  }
+ ,{
+    "id":"65405485118226815532"
+   ,"Identification":{
+      "Name":"Timeline"
+    }
+  }
+ ,{
+    "id":"65405485573054815533"
+   ,"Identification":{
+      "Name":"Value Attribute Pairs - Column"
+    }
+  }
+ ,{
+    "id":"65405487511036815534"
+   ,"Identification":{
+      "Name":"Value Attribute Pairs - Row"
+    }
+  }
+]

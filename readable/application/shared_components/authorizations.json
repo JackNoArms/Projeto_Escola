@@ -1,0 +1,20 @@
+[
+  {
+    "id":"65405546102383815567"
+   ,"Identification":{
+      "Name":"Direitos de Administra\u00E7\u00E3o"
+    }
+   ,"Authorization Scheme":{
+      "Type":"Fun\u00E7\u00E3o PL\/SQL que Retorna Booleano"
+    }
+   ,"Settings":{
+      "Corpo da Fun\u00E7\u00E3o PL\/SQL":"return true;"
+    }
+   ,"Server Cache":{
+      "Evaluation Point":"Once per Page View"
+    }
+   ,"Error":{
+      "Error Message":"Privil\u00E9gios insuficientes; o usu\u00E1rio n\u00E3o \u00E9 um Administrador"
+    }
+  }
+]
