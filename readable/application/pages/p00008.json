@@ -1,0 +1,372 @@
+{
+  "id":"8"
+ ,"Identification":{
+    "Name":"S\u00E9ries"
+   ,"Alias":"S\u00C9RIES"
+   ,"Title":"S\u00E9ries"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"65822962656206598281"
+     ,"Identification":{
+        "Title":"S\u00E9ries"
+       ,"Type":"Relat\u00F3rio Interativo"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select NOME_SERIE\nfrom ESC_SERIE\norder by NOME_SERIE ASC"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (65405434804361815510)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"65822962771214598281"
+       ,"Link":{
+          "Link Column":"Link to Custom Target"
+         ,"Target":{
+            "url":"f?p=\u0026APP_ID.:9:\u0026APP_SESSION.::\u0026DEBUG.:RP:P9_COD:\u005C#COD#\u005C"
+           ,"Page":"9"
+           ,"Clear Cache":"RP"
+           ,"Values":{
+              "P9_COD":"#COD#"
+            }
+          }
+         ,"Link Icon":"\u003Cspan aria-label=\"Editar\"\u003E\u003Cspan class=\"fa fa-edit\" aria-hidden=\"true\" title=\"Editar\"\u003E\u003C\/span\u003E\u003C\/span\u003E"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"Dados n\u00E3o encontrados."
+         ,"When More Data Found":"A contagem m\u00E1xima de linhas deste relat\u00F3rio \u00E9 #MAX_ROW_COUNT# linhas. Aplique um filtro para reduzir o n\u00FAmero de registros em sua consulta."
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":false
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"65822967944323599205"
+           ,"Identification":{
+              "Name":"Relat\u00F3rio Prim\u00E1rio"
+             ,"Alias":"658229680"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"65822963582488598285"
+           ,"Identification":{
+              "Column Name":"NOME_SERIE"
+             ,"Type":"Plain Text"
+            }
+           ,"Heading":{
+              "Heading":"Nome Serie"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":2
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"Letter"
+           ,"Orientation":"Landscape"
+           ,"Units":"Inches"
+           ,"Width":11
+           ,"Height":8.5
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"S\u00E9ries"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+   ,{
+      "id":"65822965721887598287"
+     ,"Identification":{
+        "Title":"Breadcrumb"
+       ,"Type":"Breadcrumb"
+      }
+     ,"Source":{
+        "Breadcrumb":"Breadcrumb (65404741914059815467)"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Title Bar (65405457007162815520)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-BreadcrumbRegion--useBreadcrumbTitle"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "Breadcrumb Template":"Breadcrumb (65405519163693815548)"
+         ,"Template Options":[
+            "#DEFAULT#"
+          ]
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"65822964066312598286"
+     ,"Identification":{
+        "Button Name":"CREATE"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"S\u00E9ries (65822962656206598281)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (65405517584735815548)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9:\u0026APP_SESSION.::\u0026DEBUG.:9::"
+         ,"Page":"9"
+         ,"Clear Cache":"9"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"65822964391583598286"
+     ,"Identification":{
+        "Name":"Editar Relat\u00F3rio - Caixa de Di\u00E1logo Fechada"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.FAMEWORK.APEXAFTERCLOSEDIALOG"
+       ,"Selection Type":"Region"
+       ,"Region":"S\u00E9ries (65822962656206598281)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"65822964893224598286"
+         ,"Identification":{
+            "Action":"Atualizar"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"S\u00E9ries (65822962656206598281)"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Editar Relat\u00F3rio - Caixa de Di\u00E1logo Fechada (65822964391583598286)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+}

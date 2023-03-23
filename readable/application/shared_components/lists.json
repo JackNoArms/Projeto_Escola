@@ -117,6 +117,68 @@
           "Authorization Scheme":"Direitos de Administra\u00E7\u00E3o (65405546102383815567)"
         }
       }
+     ,{
+        "id":"65820040454726494528"
+       ,"Label":{
+          "Label":"Matricular Aluno"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-plus"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "6"
+           ,"7"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"6"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"65822962295266598280"
+       ,"Label":{
+          "Label":"S\u00E9ries"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-table"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "8"
+           ,"9"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:8:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"8"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
     ]
   }
  ,{
@@ -277,6 +339,60 @@
           "Target":{
             "url":"f?p=\u0026APP_ID.:4:\u0026APP_SESSION.::\u0026DEBUG.:::"
            ,"Page":"4"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"65821812125996525291"
+       ,"Label":{
+          "Label":"Matricular Aluno"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-plus"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"6"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"65821829663471528918"
+       ,"Label":{
+          "Label":"Administra\u00E7\u00E3o"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-wrench"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:10000:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"10000"
           }
         }
        ,"Click Counting":{

@@ -1,0 +1,595 @@
+{
+  "id":"7"
+ ,"Identification":{
+    "Name":"Form_Matricula"
+   ,"Alias":"FORM-MATRICULA"
+   ,"Title":"Form_Matricula"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":false
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"65820032903620494518"
+     ,"Identification":{
+        "Title":"Form_Matricula"
+       ,"Type":"Form"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"ESC_ALUNO"
+       ,"Include ROWID Column":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (65404778612382815486)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Edit":{
+          "Enabled":true
+         ,"Allowed Operations":[
+            "Add Row"
+           ,"Update Row"
+           ,"Delete Row"
+          ]
+         ,"Lost Update Type":"Row Values"
+        }
+      }
+    }
+   ,{
+      "id":"65820036095645494521"
+     ,"Identification":{
+        "Title":"Bot\u00F5es"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_03"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Buttons Container (65404781453115815487)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"Text (escape special characters)"
+         ,"Mostrar Quebras de Linha":true
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"65820033237224494518"
+     ,"Identification":{
+        "Name":"P7_COD"
+       ,"Type":"Oculto"
+      }
+     ,"Settings":{
+        "Valor Protegido":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Form_Matricula (65820032903620494518)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Form_Matricula (65820032903620494518)"
+       ,"Column":"COD"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":true
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"65820033639854494519"
+     ,"Identification":{
+        "Name":"P7_NOME"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Nome"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Form_Matricula (65820032903620494518)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (65405515078079815547)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Form_Matricula (65820032903620494518)"
+       ,"Column":"NOME"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+      }
+     ,"Session State":{
+        "Storage":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"65820034097653494520"
+     ,"Identification":{
+        "Name":"P7_SERIE"
+       ,"Type":"LOV Popup"
+      }
+     ,"Label":{
+        "Label":"Serie"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Exibir Como":"Inline Popup"
+       ,"Extra\u00E7\u00E3o Inicial":"Automatic"
+       ,"Diversos Valores":false
+       ,"Entrada Manual":false
+       ,"Pesquisar ao Digitar":false
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Form_Matricula (65820032903620494518)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (65405515078079815547)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"select nome_serie\nfrom ESC_SERIE"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Form_Matricula (65820032903620494518)"
+       ,"Column":"SERIE"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+      }
+     ,"Session State":{
+        "Storage":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"65820034472833494520"
+     ,"Identification":{
+        "Name":"P7_IDADE"
+       ,"Type":"Campo de N\u00FAmero"
+      }
+     ,"Label":{
+        "Label":"Idade"
+       ,"Alignment":"Right"
+      }
+     ,"Settings":{
+        "Alinhamento de N\u00FAmero":"Start"
+       ,"Teclado Virtual":"Decimal"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Form_Matricula (65820032903620494518)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (65405515078079815547)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":32
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Form_Matricula (65820032903620494518)"
+       ,"Column":"IDADE"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+      }
+     ,"Session State":{
+        "Storage":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"65820036418567494525"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Bot\u00F5es (65820036095645494521)"
+       ,"Position":"CLOSE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (65405517584735815548)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":true
+      }
+    }
+   ,{
+      "id":"65820037885154494526"
+     ,"Identification":{
+        "Button Name":"DELETE"
+       ,"Label":"Excluir"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Bot\u00F5es (65820036095645494521)"
+       ,"Position":"DELETE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (65405517584735815548)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL DELETE action"
+      }
+     ,"Confirmation":{
+        "Message":"\u0026APP_TEXT$DELETE_MSG!RAW."
+       ,"Style":"Danger"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P7_COD"
+      }
+    }
+   ,{
+      "id":"65820038229626494526"
+     ,"Identification":{
+        "Button Name":"SAVE"
+       ,"Label":"Aplicar Altera\u00E7\u00F5es"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Bot\u00F5es (65820036095645494521)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (65405517584735815548)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P7_COD"
+      }
+    }
+   ,{
+      "id":"65820038641296494527"
+     ,"Identification":{
+        "Button Name":"CREATE"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Bot\u00F5es (65820036095645494521)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (65405517584735815548)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL INSERT action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NULL"
+       ,"Item":"P7_COD"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"65820036591629494525"
+     ,"Identification":{
+        "Name":"Cancel Dialog"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCEL (65820036418567494525)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"65820037345798494526"
+         ,"Identification":{
+            "Action":"Cancelar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Cancel Dialog (65820036591629494525)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"65820039031597494527"
+     ,"Identification":{
+        "Name":"Inicializar o form Form_Matricula"
+       ,"Type":"Form - Inicializa\u00E7\u00E3o"
+       ,"Form Region":"Form_Matricula (65820032903620494518)"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Before Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+   ,{
+      "id":"65820039456029494527"
+     ,"Identification":{
+        "Name":"Processar o form Form_Matricula"
+       ,"Type":"Form - Processamento Autom\u00E1tico de Linhas (DML)"
+       ,"Form Region":"Form_Matricula (65820032903620494518)"
+      }
+     ,"Settings":{
+        "Tipo de Alvo":"Region Source"
+       ,"Impedir Perda de Atualiza\u00E7\u00F5es":true
+       ,"Bloquear Linha":"Yes"
+       ,"Retornar Chave(s) Prim\u00E1ria(s) ap\u00F3s Inser\u00E7\u00E3o":true
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"65820039815113494528"
+     ,"Identification":{
+        "Name":"Fechar Caixa de Di\u00E1logo"
+       ,"Type":"Fechar Caixa de Di\u00E1logo"
+      }
+     ,"Execution":{
+        "Sequence":50
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "Type":"Request is contained in Value"
+       ,"Value":"CREATE,SAVE,DELETE"
+      }
+    }
+  ]
+}

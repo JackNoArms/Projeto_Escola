@@ -69,6 +69,38 @@
           }
         }
       }
+     ,{
+        "id":"65820044625054494536"
+       ,"Identification":{
+          "Name":"Matricular Aluno"
+         ,"Page Number":"6"
+        }
+       ,"Execution":{
+          "Sequence":10
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:6:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"6"
+          }
+        }
+      }
+     ,{
+        "id":"65822965574665598287"
+       ,"Identification":{
+          "Name":"S\u00E9ries"
+         ,"Page Number":"8"
+        }
+       ,"Execution":{
+          "Sequence":10
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:8:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"8"
+          }
+        }
+      }
     ]
   }
 ]
