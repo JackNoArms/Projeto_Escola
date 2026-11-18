@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12463c">
+  <meta name="description" content="Sistema Escola: visão acadêmica de alunos, matrículas, professores e disciplinas. Demonstração com dados fictícios.">
+  <title>Sistema Escola | Gestão Acadêmica</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
+<div class="shell">
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a href="#overview" class="brand">
+      <span class="brand-mark" aria-hidden="true">e<span>✳</span></span>
+      <span>SISTEMA <small>ESCOLA</small></span>
+    </a>
+    <div class="sidebar-label">MENU PRINCIPAL</div>
+    <nav class="side-nav">
+      <a href="#overview" class="active"><span aria-hidden="true">▦</span> Visão geral</a>
+      <a href="#enrollments"><span aria-hidden="true">◫</span> Matrículas</a>
+      <a href="#teachers"><span aria-hidden="true">♙</span> Professores</a>
+      <a href="#subjects"><span aria-hidden="true">▤</span> Matérias</a>
+      <a href="#about"><span aria-hidden="true">ⓘ</span> Sobre</a>
+    </nav>
+    <div class="sidebar-info">
+      <span class="dot"></span> DEMONSTRAÇÃO
+      <p>Registros fictícios para apresentação. Nenhuma conexão com o Oracle APEX.</p>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <header class="topbar">
+      <div class="breadcrumbs">Sistema Escola <span>/</span> <strong>Visão acadêmica</strong></div>
+      <div class="profile"><span aria-hidden="true">●</span> Ambiente demonstrativo</div>
+    </header>
+
+    <section id="overview" class="hero">
+      <p class="eyebrow">PAINEL ACADÊMICO / ANO LETIVO FICTÍCIO DE 2026</p>
+      <div class="hero-row">
+        <div><h1>Uma escola organizada começa com <em>informações claras.</em></h1>
+        <p>Acompanhe matrículas, explore a distribuição entre séries e consulte professores e matérias em um só lugar.</p></div>
+        <span class="hero-symbol" aria-hidden="true">✳</span>
+      </div>
+      <div class="notice"><span aria-hidden="true">ⓘ</span><div><strong>Este painel é uma demonstração independente</strong><p>Os números, nomes e matrículas abaixo são fictícios. Alterações são temporárias e não são enviadas ao sistema Oracle APEX original.</p></div></div>
+    </section>
+
+    <section class="metrics" aria-label="Indicadores acadêmicos de exemplo">
+      <article class="metric">
+        <div class="metric-label">TOTAL DE ALUNOS <span aria-hidden="true">◫</span></div>
+        <strong id="total">—</strong>
+        <p>Registros de matrícula</p>
+      </article>
+      <article class="metric"><div class="metric-label">MATRÍCULAS ATIVAS <span aria-hidden="true">✓</span></div><strong id="active">—</strong><p>Alunos com situação ativa</p></article>
+      <article class="metric"><div class="metric-label">PENDÊNCIAS <span aria-hidden="true">◷</span></div><strong id="pending">—</strong><p>Aguardando confirmação</p></article>
+      <article class="metric"><div class="metric-label">PROFESSORES <span aria-hidden="true">♙</span></div><strong id="teacher-total">—</strong><p>Perfis de exemplo</p></article>
+    </section>
+
+    <section class="section" id="analytics">
+      <div class="section-heading"><div><p class="eyebrow">01 · INDICADORES</p><h2>Um panorama da escola</h2><p>Entenda como os registros desta demonstração estão distribuídos entre séries e situações.</p></div><span class="section-pill">DADOS FICTÍCIOS</span></div>
+      <div class="charts">
+        <article class="panel">
+          <h3>Alunos por série</h3>
+          <p>Quantidade cadastrada em cada série</p>
+          <div class="chart" id="grade-chart" aria-label="Distribuição por série"></div>
+        </article>
+        <article class="panel">
+          <h3>Situação das matrículas</h3>
+          <p>Composição do recorte atual</p>
+          <div class="chart" id="status-chart" aria-label="Situação das matrículas"></div>
+        </article>
+      </div>
+      <div class="insight"><span class="insight-tag">✳ &nbsp; LEITURA DO PAINEL</span><p id="insight">Os indicadores refletem somente os dados fictícios carregados neste navegador.</p></div>
+    </section>
+
+    <section class="section" id="enrollments">
+      <div class="section-heading"><div><p class="eyebrow">02 · GERENCIAR</p><h2>Matrículas</h2><p>Encontre estudantes, filtre por série e situação, ou registre uma matrícula demonstrativa.</p></div>
+      <button id="add-button" class="button-primary" type="button"><span aria-hidden="true">＋</span> Nova matrícula</button></div>
+      <div class="filter-panel" aria-label="Filtros de matrícula">
+        <div class="filter search-field"><label for="search">BUSCAR ALUNO</label><input id="search" type="search" placeholder="Pesquisar por nome ou código..." autocomplete="off"></div>
+        <div class="filter"><label for="grade">SÉRIE</label><select id="grade"><option value="">Todas as séries</option></select></div>
+        <div class="filter"><label for="status">SITUAÇÃO</label><select id="status"><option value="">Todas as situações</option></select></div>
+        <button id="reset" class="button-secondary" type="button">Limpar</button>
+      </div>
+      <div class="table-panel">
+        <div class="table-header"><strong id="row-count" role="status" aria-live="polite">Carregando...</strong><button id="export" type="button" class="export">↓ Exportar CSV</button></div>
+        <div class="table-scroll">
+          <table><caption class="visually-hidden">Matrículas fictícias filtráveis</caption>
+          <thead><tr><th scope="col">ALUNO</th><th scope="col">SÉRIE</th><th scope="col">DATA</th><th scope="col">SITUAÇÃO</th><th scope="col">ALTERAR SITUAÇÃO</th></tr></thead>
+          <tbody id="rows"></tbody></table>
+        </div>
+        <div id="empty" class="empty" hidden>Nenhuma matrícula encontrada para estes filtros.</div>
+        <div class="table-footer"><span>Todas as mudanças são temporárias nesta demonstração.</span><button id="restore" type="button">Restaurar dados fictícios</button></div>
+      </div>
+    </section>
+
+    <section class="section" id="teachers">
+      <div class="section-heading"><div><p class="eyebrow">03 · EQUIPE</p><h2>Corpo docente</h2><p>Uma visão organizada dos professores e das matérias atribuídas.</p></div><span class="section-pill">PERFIS ILUSTRATIVOS</span></div>
+      <div class="teacher-grid" id="teacher-grid"></div>
+    </section>
+
+    <section class="section" id="subjects">
+      <div class="section-heading"><div><p class="eyebrow">04 · CURRÍCULO</p><h2>Matérias</h2><p>Disciplinas, áreas de conhecimento e cargas horárias ilustrativas.</p></div></div>
+      <div class="subject-grid" id="subject-grid"></div>
+    </section>
+
+    <section id="about" class="about section">
+      <p class="eyebrow">05 · SOBRE O PROJETO</p>
+      <h2>Da organização dos cadastros à visão acadêmica.</h2>
+      <p>O Sistema Escola foi criado com Oracle APEX e inclui páginas para professores, matérias, alunos e séries. Esta demonstração web reproduz os principais conceitos de gestão acadêmica com dados fictícios, sem necessidade de uma conta Oracle.</p>
+      <p>A versão Oracle APEX e sua exportação original permanecem no repositório para estudo da estrutura de páginas, relatórios e formulários.</p>
+    </section>
+    <footer><span>SISTEMA ESCOLA</span><span>Protótipo de gestão acadêmica · dados de exemplo</span></footer>
+  </main>
+</div>
+
+<dialog id="new-student" aria-labelledby="dialog-title">
+  <form id="enroll-form">
+    <div class="dialog-head"><div><p class="eyebrow">MATRÍCULA DEMONSTRATIVA</p><h2 id="dialog-title">Adicionar aluno</h2></div><button type="button" id="close-dialog" aria-label="Fechar formulário" class="close">×</button></div>
+    <p class="dialog-description">O cadastro será exibido apenas nesta sessão do navegador; nenhum dado será enviado a um servidor.</p>
+    <div class="dialog-field"><label for="student-name">NOME DO ALUNO</label><input id="student-name" minlength="3" maxlength="70" required placeholder="Ex.: Aluno Demonstração"></div>
+    <div class="dialog-field"><label for="student-grade">SÉRIE</label><select id="student-grade" required></select></div>
+    <div id="form-error" class="error" role="alert" hidden></div>
+    <button type="submit" class="button-primary dialog-submit">Criar matrícula fictícia</button>
+  </form>
+</dialog>
+</body>
+</html>

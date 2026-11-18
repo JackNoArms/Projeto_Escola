@@ -1,0 +1,35 @@
+name: Sistema Escola demo checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test-demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: JavaScript syntax
+        run: |
+          node --check demo/data.mjs
+          node --check demo/app.mjs
+      - name: Test fictional enrollment rules
+        run: node --test tests/demo.test.mjs
+      - name: Original Oracle APEX export is present
+        run: |
+          test -f f193381.sql
+          test -d readable/application/pages
+      - name: No generated files tracked
+        shell: bash
+        run: |
+          if git ls-files | grep -E '(^|/)node_modules/|^\.cache/|(^|/)\.env$'; then
+            echo "Generated or private artifacts are tracked"; exit 1
+          fi
